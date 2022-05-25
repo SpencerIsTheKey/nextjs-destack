@@ -18,6 +18,12 @@ export default function Home({ allPostsData }) {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+      <section className={utilStyles.headingMd}>
+        <h2 className={utilStyles.headingLg}>Builder Test</h2>
+        <Link href={'/static/test'}>
+          <a>Builder Page</a>
+        </Link>
+      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
