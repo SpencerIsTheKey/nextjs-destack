@@ -14,7 +14,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <p>Test site for the Bongarde components</p>
         <p>
           (This is based off the sample website that was build using{' '}
           <a href="https://nextjs.org/learn">the Next.js tutorial</a>.)
