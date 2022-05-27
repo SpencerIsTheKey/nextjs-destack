@@ -14,14 +14,14 @@ import gridStyles from "../../styles/HRI/grid.module.css"
 
 export default function TileGrid({ gridDimensions, images, links, labels, gridHeight, gridWidth, gridMargins }) {
   let gridDims = gridDimensions.split("x");
-  if(gridDims.length != 2)
+  if(gridDims.length != 2 || gridDims[0].length < 1 || gridDims[1] < 1)
     throw "Invalid format for  GridDimensions";
 
   let gridCols = parseInt(gridDims[0]);
   let gridRows = parseInt(gridDims[1]);
   let tileNum = gridCols*gridRows;
 
-  if( images.length < tileNum || links.length < tileNum || labels.length < tileNum)
+  if( images.length != tileNum || links.length != tileNum || labels.length != tileNum)
     throw "Invalid content number";
 
   let tileMargin = gridMargins / 2;
