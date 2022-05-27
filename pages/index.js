@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/utils/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/utils/date'
 import Tile from '../components/home/tile'
 import TileGrid from '../components/home/tilegrid'
 
