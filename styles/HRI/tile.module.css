@@ -1,0 +1,24 @@
+.tint{
+  background-color: #1a80b6;
+  background-position: center center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  min-height: 0px;
+}
+
+.tile{
+  margin: 5px;
+  width: fit-content;
+  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.text{
+  color: whitesmoke;
+  font-weight: 600;
+}
