@@ -12,7 +12,7 @@ import gridStyles from "../../styles/HRI/grid.module.css"
  * @returns Grid of Tile Objects
  */
 
-export default function TileGrid({ gridDimensions, images, links, labels, gridHeight, gridWidth, gridMargins }) {
+export default function TileGrid({ gridDimensions, images, links, labels, tileHeight, tileWidth, gridMargins }) {
   let gridDims = gridDimensions.split("x");
   if(gridDims.length != 2 || gridDims[0].length < 1 || gridDims[1] < 1)
     throw "Invalid format for  GridDimensions";
@@ -25,11 +25,10 @@ export default function TileGrid({ gridDimensions, images, links, labels, gridHe
     throw "Invalid content number";
 
   let tileMargin = gridMargins / 2;
-  
-  let tileWidth = (gridWidth - (gridMargins * (gridCols)))/gridCols;
-  let tileHeight = (gridHeight - (gridMargins * (gridRows)))/gridRows;
 
-  console.log((gridMargins * (gridCols)));
+  let gridHeight = (tileHeight + gridMargins) * gridRows;
+  let gridWidth = (tileWidth + gridMargins) * gridCols;
+
 
   return(
     <>

@@ -47,8 +47,8 @@ export default function Home({ allPostsData }) {
             'Cases & Compliance Alerts',
             'Special Reports'
           ]}
-          gridHeight={420}
-          gridWidth={930}
+          tileHeight={200}
+          tileWidth={300}
           gridMargins={10}
         />
         <Tile 
